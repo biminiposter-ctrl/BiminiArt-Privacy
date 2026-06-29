@@ -3,10 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>BiminiArt | Digital Printable Wall Art</title>
-  <link rel="icon" type="image/jpeg" href="logo.jpg">
-  <meta name="description" content="BiminiArt creates digital printable wall art and instant download poster collections for modern interiors." />
-  <meta name="p:domain_verify" content="5d975fb0e75628b09a2f0c22aeff05d6"/>
+  <meta name="description" content="BiminiArt creates digital printable wall art, poster collections and instant downloads for modern interiors." />
+
+  <meta name="p:domain_verify" content="5d975fb0e75628b09a2f0c22aeff05d6" />
+
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+  <meta property="og:title" content="BiminiArt | Digital Printable Wall Art" />
+  <meta property="og:description" content="Printable wall art and instant download poster collections for modern interiors." />
+  <meta property="og:image" content="https://biminiposter-ctrl.github.io/BiminiArt-Privacy/logo.jpg" />
+  <meta property="og:url" content="https://biminiposter-ctrl.github.io/BiminiArt-Privacy/" />
+  <meta property="og:type" content="website" />
 
   <style>
     :root {
@@ -18,9 +27,7 @@
       --accent: #8b5a44;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -37,13 +44,13 @@
     }
 
     .hero {
-      min-height: 70vh;
+      min-height: 74vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 60px 20px;
+      padding: 64px 20px;
     }
 
     .logo {
@@ -55,7 +62,7 @@
     }
 
     h1 {
-      font-size: clamp(44px, 8vw, 82px);
+      font-size: clamp(46px, 8vw, 84px);
       margin: 0;
       letter-spacing: -2px;
       font-weight: 700;
@@ -63,14 +70,14 @@
 
     .subtitle {
       margin-top: 10px;
-      font-size: 20px;
+      font-size: 18px;
       color: var(--accent);
-      letter-spacing: 0.08em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
     .intro {
-      max-width: 650px;
+      max-width: 680px;
       margin: 28px auto 0;
       font-size: 18px;
       color: var(--muted);
@@ -125,8 +132,23 @@
       letter-spacing: -0.5px;
     }
 
-    p {
-      font-size: 17px;
+    p { font-size: 17px; }
+
+    .collection-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+      margin: 20px 0 0;
+    }
+
+    .collection-list li {
+      background: #faf7f2;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 18px;
+      color: var(--muted);
     }
 
     footer {
@@ -137,9 +159,7 @@
       padding-bottom: 20px;
     }
 
-    a {
-      color: var(--accent);
-    }
+    a { color: var(--accent); }
   </style>
 </head>
 
@@ -153,11 +173,16 @@
 
       <p class="intro">
         Curated printable artwork for modern interiors, gallery walls and creative spaces.
-        BiminiArt creates digital download poster collections inspired by vintage design,
+        BiminiArt creates instant download poster collections inspired by vintage design,
         coastal living, botanical themes and timeless home decor.
       </p>
 
       <div class="cards">
+        <a class="card" href="about.html">
+          <strong>About</strong>
+          <span>Learn more about BiminiArt.</span>
+        </a>
+
         <a class="card" href="privacy.html">
           <strong>Privacy Policy</strong>
           <span>How we handle data.</span>
@@ -172,36 +197,31 @@
           <strong>Support</strong>
           <span>Contact and help information.</span>
         </a>
-
-        <a class="card" href="about.html">
-          <strong>About</strong>
-          <span>Learn more about BiminiArt.</span>
-        </a>
       </div>
     </div>
 
     <section>
-      <h2>About BiminiArt</h2>
+      <h2>Printable Art for Beautiful Spaces</h2>
       <p>
         BiminiArt is an independent digital art studio focused on printable wall art,
         instant download poster collections and decorative artwork for personal spaces.
       </p>
       <p>
-        Our collections include vintage-inspired prints, coastal artwork, botanical posters,
-        typography designs, animal wall art and curated gallery wall sets.
+        Our prints are designed for easy home styling, gallery walls, seasonal decor,
+        thoughtful gifts and creative interiors.
       </p>
     </section>
 
     <section>
-      <h2>Bimini Analytics</h2>
-      <p>
-        Bimini Analytics is a private desktop application used internally by BiminiArt
-        to manage Etsy and Pinterest marketing workflows.
-      </p>
-      <p>
-        The application helps organize product marketing, Pinterest campaign creation,
-        analytics workflows and content management for BiminiArt.
-      </p>
+      <h2>Collections</h2>
+      <ul class="collection-list">
+        <li>Coastal Wall Art</li>
+        <li>Vintage Prints</li>
+        <li>Botanical Posters</li>
+        <li>Gallery Wall Sets</li>
+        <li>Typography Prints</li>
+        <li>Animal Wall Art</li>
+      </ul>
     </section>
 
     <footer>
